@@ -1,12 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
     <meta charset="UTF-8">
     <title>Waukesha Public Library Late Fee Calculator</title>
     <script src="code.js"></script>
 </head>
 <body>
 <h1>Waukesha Public Library Late Fee Calculator</h1>
-<button onclick="lateFeeCalc()">Calculate Late Fees</button>
+    <label for="daysLate">How many days late?</label>
+    <input type="number" id="daysLate">
+    <br>
+    <label for="books">How many books?</label>
+    <input type="number" id="books">
+    <br>
+    <label for="dvds">How many DVDs?</label>
+    <input type="number" id="dvds">
+    <br>
+    <button>Calculate Late Fees</button>
+    <br>
+    <p class="output">
+        You owe: $<span id="totalfee"></span>
+    </p>
 </body>
 </html>
